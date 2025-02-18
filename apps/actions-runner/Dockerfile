@@ -15,16 +15,13 @@ RUN \
     && \
     apt-get install -y --no-install-recommends --no-install-suggests \
         ca-certificates \
-        curl \
         gcc \
-        git \
         jo \
-        jq \
         moreutils \
-        unrar \
-        unzip \
         wget \
-        zip \
+        zstd \
+    && curl -fsSL -o /usr/local/bin/yq "https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64" \
+    && chmod +x /usr/local/bin/yq \
     && rm -rf /var/lib/apt/lists/*
 
 USER runner

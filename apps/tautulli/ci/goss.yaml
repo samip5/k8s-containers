@@ -1,12 +1,14 @@
 ---
 # yaml-language-server: $schema=https://raw.githubusercontent.com/goss-org/goss/master/docs/schema.yaml
 process:
-  Readarr:
+  python:
     running: true
 port:
-  tcp6:8787:
+  tcp:8181:
     listening: true
 http:
-  http://localhost:8787:
+  http://localhost:8181:
     status: 200
-    timeout: 5000
+file:
+  /usr/local/bin/python:
+    exists: true

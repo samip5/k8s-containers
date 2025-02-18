@@ -1,6 +1,6 @@
 <!---
 NOTE: AUTO-GENERATED FILE
-to edit this file, instead edit its template at: ./github/scripts/templates/README.md.j2
+to edit this file, instead edit its template at: ./scripts/templates/README.md.j2
 -->
 <div align="center">
 
@@ -89,11 +89,10 @@ Some applications do not support defining configuration via environment variable
 
 1. First read the Kubernetes docs on [defining command and arguments for a Container](https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/).
 2. Look up the documentation for the application and find a argument you would like to set.
-3. Set the argument in the `args` section, be sure to include `entrypoint.sh` as the first arg and any application specific arguments thereafter.
+3. Set the extra arguments in the `args` section like below.
 
     ```yaml
     args:
-      - /entrypoint.sh
       - --port
       - "8080"
     ```
@@ -112,27 +111,19 @@ Container | Channel | Image
 [bazarr](https://github.com/onedr0p/containers/pkgs/container/bazarr) | stable | ghcr.io/onedr0p/bazarr
 [home-assistant](https://github.com/onedr0p/containers/pkgs/container/home-assistant) | stable | ghcr.io/onedr0p/home-assistant
 [jbops](https://github.com/onedr0p/containers/pkgs/container/jbops) | stable | ghcr.io/onedr0p/jbops
-[lidarr](https://github.com/onedr0p/containers/pkgs/container/lidarr) | master | ghcr.io/onedr0p/lidarr
-[lidarr-develop](https://github.com/onedr0p/containers/pkgs/container/lidarr-develop) | develop | ghcr.io/onedr0p/lidarr-develop
-[lidarr-nightly](https://github.com/onedr0p/containers/pkgs/container/lidarr-nightly) | nightly | ghcr.io/onedr0p/lidarr-nightly
-[par2cmdline-turbo](https://github.com/onedr0p/containers/pkgs/container/par2cmdline-turbo) | stable | ghcr.io/onedr0p/par2cmdline-turbo
 [plex](https://github.com/onedr0p/containers/pkgs/container/plex) | stable | ghcr.io/onedr0p/plex
-[plex-beta](https://github.com/onedr0p/containers/pkgs/container/plex-beta) | beta | ghcr.io/onedr0p/plex-beta
 [postgres-init](https://github.com/onedr0p/containers/pkgs/container/postgres-init) | stable | ghcr.io/onedr0p/postgres-init
 [prowlarr](https://github.com/onedr0p/containers/pkgs/container/prowlarr) | master | ghcr.io/onedr0p/prowlarr
 [prowlarr-develop](https://github.com/onedr0p/containers/pkgs/container/prowlarr-develop) | develop | ghcr.io/onedr0p/prowlarr-develop
 [prowlarr-nightly](https://github.com/onedr0p/containers/pkgs/container/prowlarr-nightly) | nightly | ghcr.io/onedr0p/prowlarr-nightly
 [qbittorrent](https://github.com/onedr0p/containers/pkgs/container/qbittorrent) | stable | ghcr.io/onedr0p/qbittorrent
-[qbittorrent-beta](https://github.com/onedr0p/containers/pkgs/container/qbittorrent-beta) | beta | ghcr.io/onedr0p/qbittorrent-beta
 [radarr](https://github.com/onedr0p/containers/pkgs/container/radarr) | master | ghcr.io/onedr0p/radarr
 [radarr-develop](https://github.com/onedr0p/containers/pkgs/container/radarr-develop) | develop | ghcr.io/onedr0p/radarr-develop
 [radarr-nightly](https://github.com/onedr0p/containers/pkgs/container/radarr-nightly) | nightly | ghcr.io/onedr0p/radarr-nightly
-[readarr-develop](https://github.com/onedr0p/containers/pkgs/container/readarr-develop) | develop | ghcr.io/onedr0p/readarr-develop
-[readarr-nightly](https://github.com/onedr0p/containers/pkgs/container/readarr-nightly) | nightly | ghcr.io/onedr0p/readarr-nightly
 [sabnzbd](https://github.com/onedr0p/containers/pkgs/container/sabnzbd) | stable | ghcr.io/onedr0p/sabnzbd
 [sonarr](https://github.com/onedr0p/containers/pkgs/container/sonarr) | main | ghcr.io/onedr0p/sonarr
 [sonarr-develop](https://github.com/onedr0p/containers/pkgs/container/sonarr-develop) | develop | ghcr.io/onedr0p/sonarr-develop
-[theme-park](https://github.com/onedr0p/containers/pkgs/container/theme-park) | stable | ghcr.io/onedr0p/theme-park
+[tautulli](https://github.com/onedr0p/containers/pkgs/container/tautulli) | master | ghcr.io/onedr0p/tautulli
 [volsync](https://github.com/onedr0p/containers/pkgs/container/volsync) | stable | ghcr.io/onedr0p/volsync
 
 
